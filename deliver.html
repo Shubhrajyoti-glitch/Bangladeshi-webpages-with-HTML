@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deliver a Product - ABC Logistics</title>
+</head>
+<body>
+
+    <table width="100%" bgcolor="#ffcc00" style="animation: slideIn 1.5s;">
+        <tr>
+            <td align="center">
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\xpress logo.png" width="200" height="200" align="center">
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\XPRESS INTERNATIONAL.png" width="800" height="200" align="center">
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="#333">
+        <tr>
+            <td align="center"><a href="logi2.html" style="text-decoration: none; color: white;">Home</a></td>
+            <td align="center"><a href="logi2.html#services" style="text-decoration: none; color: white;">Services</a></td>
+            <td align="center"><a href="logi2.html#about" style="text-decoration: none; color: white;">About Us</a></td>
+            <td align="center"><a href="logi2.html#contact" style="text-decoration: none; color: white;">Contact</a></td>
+            <td align="center"><a href="logi2.html#deliver.html" style="text-decoration: none; color: white;">Deliver a Product</a></td>
+        </tr>
+    </table>
+
+    <marquee><img src="C:\Users\user\OneDrive\Desktop\SSD assignment\delivery.png" width="600" height="178"></marquee>
+
+    <table align="center" cellpadding="20" cellspacing="0" border="1" bgcolor="white"; style="margin-top: 40px;">
+        <tr>
+            <td>
+                <h2 align="center" style="color:#ff0000;"> Fill it up , Your package is on the way...</h2>
+                <form id="deliveryForm">
+                    <p>
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" required style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <label for="email">Your Email:</label><br>
+                        <input type="email" id="email" name="email" required style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <label for="address">Delivery Address:</label><br>
+                        <input type="text" id="address" name="address" required style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <label for="product">Product Description:</label><br>
+                        <input type="text" id="product" name="product" required style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <label for="date">Preferable Delivery Date:</label><br>
+                        <input type="date" id="date" name="date" required style="width: 100%;">
+                        <p>International deliveries need atleast a time of 24 hrs.</p>
+                    </p>
+
+                    <p>
+                        <label for="checked ? ">Have checked all your details above ?</label><br>
+                        <input type="checkbox" id="checkbox" name="checkbox" required style="width: 100%;">
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Submit" style="background-color:#007bff; color:white; padding:10px 20px; border:none; cursor:pointer; width:100%;">
+                    </p>
+                </form>
+
+                <div id="successMessage" style="display:none; padding:15px; background-color:#d4edda; color:#155724; text-align:center;">
+                    Thank you! Your delivery has been scheduled.
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById('deliveryForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Optionally, clear the form
+            document.getElementById('deliveryForm').reset();
+        });
+    </script>
+
+</body>
+</html>

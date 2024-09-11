@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Bangladeshi</title>
+    <style>
+        /* Animation for header */
+        @keyframes slideIn {
+            from { transform: translateY(-100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        header {
+            animation: slideIn 1s ease-out;
+        }
+
+        /* Animation for product cards */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .product-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #FFFDD0; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <header style="background-color: #745c28; color: white; padding: 20px; text-align: center;">
+        <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\bangladeshi.png" width="800" height="200" align="center">
+    </header>
+
+    <!-- Navigation -->
+    <nav style="background-color: #ffc800; padding: 10px; text-align: center;">
+        <a href="index.html" style="color: white; text-decoration: none; padding: 10px;">Home</a>
+        <a href="products.html" style="color: white; text-decoration: none; padding: 10px;">Products</a>
+        <a href="login.html" style="color: white; text-decoration: none; padding: 10px;">Login</a>
+        <a href="abouts.html" style="color: white; text-decoration: none; padding: 10px;">About Us</a>
+        <a href="cart.html" style="color: white; text-decoration: none; padding: 10px;">Cart</a>
+        <a href="contact.html" style="color: white; text-decoration: none; padding: 10px;">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div style="width: 90%; margin: 20px auto; padding: 20px; background-color: #b4b3bb; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\XPRESS INTERNATIONAL (4).png" width="800" height="200" align="center">
+        <h1>Rice</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+            <!-- BASMATI RICE -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Basmati Rice</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\basmati.jpg" alt="Basmati Rice" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 18px; color: #218034;">$14.29 / 10 KG</p>
+                <p style="font-size: 15px; color: #000000;">Basmati is a type of long-grain rice with a floral aroma and nutty flavor that's grown in the Indian subcontinent and is a staple in many Indian dishes. It's known for its high volume expansion during cooking, resulting in long, fluffy grains.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- BASHKATI RICE -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Bashkati Rice</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\bashkati.png" alt="Bashkati Rice" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$12.44 / 10 KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Premium Baskathi Rice is a long-grain variety of rice and is thin in size. It has a rich taste and can be used in a variety of rice dishes including biryani, pulao, and other Indian dishes. It is processed well before packaging and is of good quality.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- MINIKET RICE -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Miniket Rice</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\miniket.jpg" alt="Miniket Rice" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$10.72 / 10 KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Miniket rice is a long grain single boiled rice of West Bengal region. Highly nutritional value and cost-effectiveness. Specialty of the rice is gluten free & high in protein. Cooked rice is tasty, good in texture, bright in appearance, non-sticky.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+        </div>
+
+        <h1>Fish</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+
+            <!-- Ilish -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Ilish</h3>
+                <img src="C:\Users\user\Downloads\Ilish.jpg" alt="Ilish" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$17.67 / KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Ilish (also known as Hilsa) is a popular and highly sought-after fish in South Asia, especially in Bangladesh and West Bengal. It's a herring-like fish with a silvery body and a distinctive flavor. Ilish is often considered a delicacy due to its unique taste and texture.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- Pabda -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Pabda</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\pabda fish.jpg" alt="Pabda" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$13.10 / KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Pabda is another popular fish in South Asia, especially in West Bengal and Bangladesh. It's a catfish-like fish with a flat body and a distinctive flavor. Pabda is known for its soft texture and slightly sweet taste.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- Bhetki -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Bhetki</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\bhetki fish.jpg" alt="Bhetki" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$14.17 / KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Bhetki (also known as Barramundi) is a popular fish in South Asia, especially in West Bengal and Bangladesh. It's a large, silvery fish with a mild flavor and a firm texture. Bhetki is often considered a versatile fish, suitable for various culinary preparations.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- Golda Chingri -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Golda Chingri</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\Golda chingri.jpg" alt="Golda Chingri" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$7.95 / KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Golda Chingri is a Bengali term for a type of shrimp or prawn. The exact species can vary, but it typically refers to a shrimp with a golden or yellowish hue. Golda Chingri is a popular ingredient in Bengali cuisine and is often used in various dishes, including curries, stir-fries, and snacks.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+            <!-- Pomfret -->
+            <div class="product-card" style="width: 30%; background-color: #ffffff; border: 1px solid #ccc; border-radius: 8px; padding: 15px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3>Pomfret</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\pomfret fish.png" alt="Pomfret" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 20px; color: #218034;">$15.48 / 10 KG.</p> 
+                <p style="font-size: 15px; color: #000000;">Pomfret is a popular fish in South Asia, especially in West Bengal and Bangladesh. It's a flat, oval-shaped fish with a silvery body and a mild, slightly sweet flavor. Pomfret is known for its delicate texture and is often enjoyed in various culinary preparations.</p>
+                <button onclick="window.location.href='checkout.html'" style="background-color: #388E3C; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-right: 10px; font-size: 16px;">Buy Now</button>
+                <button onclick="window.location.href='cart.html'" style="background-color: #8268af; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Add to Cart</button>
+            </div>
+
+        </div>
+
+    
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #654321; color: white; text-align: center; padding: 5px; position: fixed; width: 100%; bottom: 0;">
+        <p>&copy; 2024 Bangadeshi. All rights reserved. A project by Shubhrajyoti Chattopadhyay, Swastik Das, Shreya Nandy, Souryo Das Gupta, Selina Gurung, Sneha Reddy & Sujata Das.</p>
+    </footer>
+</body>
+</html>

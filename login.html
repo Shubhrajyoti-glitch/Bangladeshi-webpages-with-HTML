@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Organic Indian Store</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFDD0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #745c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #ffc800;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffb600;
+            color: #333;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+
+        .form-container input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-container input:focus {
+            border-color: #388E3C;
+            box-shadow: 0px 0px 5px rgba(56, 142, 60, 0.3);
+            outline: none;
+        }
+
+        .form-container button {
+            background-color: #388E3C;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #2c6b2f;
+            transform: scale(1.05);
+        }
+
+        .form-container button:active {
+            transform: scale(1);
+        }
+
+        /* Animation for Scrolling Text */
+        marquee {
+            color: #FF5722;
+            font-weight: bold;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #654321;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\bangladeshi.png" width="800" height="200" alt="Bangladeshi Store Logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="abouts.html">About Us</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Please Login</h2>
+        <form action="index.html" method="post" class="form-container">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div style="margin-top: 20px;">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+        <!-- Animation: Scrolling text -->
+        <marquee><strong>Secure and Easy Shopping!</strong></marquee>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bangadeshi. All rights reserved. A project by Shubhrajyoti Chattopadhyay, Swastik Das, Shreya Nandy, Souryo Das Gupta, Selina Gurung, Sneha Reddy & Sujata Das.</p>
+    </footer>
+</body>
+</html>

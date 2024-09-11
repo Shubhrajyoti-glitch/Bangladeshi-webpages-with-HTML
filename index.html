@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Indian Store</title>
+    <style>
+        /* Fade-in animation for the header */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Scale-up animation for buttons on hover */
+        @keyframes scaleUp {
+            from { transform: scale(1); }
+            to { transform: scale(1.1); }
+        }
+
+        /* Slide-in animation for the "You Must Have" section */
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFDD0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #745c28;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        nav {
+            background-color: #ffc800;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover {
+            animation: scaleUp 0.3s forwards;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Sliding effect for "You Must Have" section */
+        .products-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .product {
+            background-color: #f8f897;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product a {
+            color: #FF5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #654321;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\bangladeshi.png" width="800" height="200" align="center">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="abouts.html">About Us</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Welcome to Bangladeshi</h2>
+        <p>Your one-stop shop for the best cusine of Bengal.</p>
+        <p><a href="products.html" style="color: #FFFDD0; text-decoration: none;">Shop Now</a></p>
+
+        <!-- Animation: Flashing "Shop Now" text -->
+        <marquee behavior="alternate"><strong style="color: #FF5722;">Hurry up! Limited Stock Available!</strong></marquee>
+
+        <!-- "You Must Have" Section -->
+        <h2>You Must Have</h2>
+        <div class="products-section">
+            <!-- Product 1 -->
+            <div class="product" style="background-color: #f8f897;">
+                <h3>Basmati Rice</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\basmati.jpg">
+                <p>Price: $10/kg</p>
+                <p><a href="cart.html">Buy Now</a></p>
+            </div>
+            <!-- Product 2 -->
+            <div class="product" style="background-color: #daf3ff;">
+                <h3>Golda Chingri</h3>
+                <img src="C:\Users\user\OneDrive\Desktop\SSD assignment\Golda chingri.jpg">
+                <p>Price: $7.95 / kg</p>
+                <p><a href="cart.html">Buy Now</a></p>
+            </div>
+            <!-- Product 3 -->
+            <div class="product" style="background-color: rgb(146, 161, 155);">
+                <h3>Ilish</h3>
+                <img src="C:\Users\user\Downloads\Ilish.jpg">
+                <p>Price: $17.67 / kg</p>
+                <p><a href="cart.html">Buy Now</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Bangadeshi. All rights reserved. A project by Shubhrajyoti Chattopadhyay, Swastik Das, Shreya Nandy, Souryo Das Gupta, Selina Gurung, Sneha Reddy & Sujata Das.</p>
+    </footer>
+</body>
+</html>
